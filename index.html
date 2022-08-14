@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <title>Document</title>
+  </head>
+  <body>     
+    <div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header text-white bg-dark">
+              <h4 class="text-center">Registre su contactos</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <h4 class="text-center">Complete toda la informacion</h4>
+              </div>
+
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefono:</label>
+                <input type="text" class="form-control" id="phone" />
+              </div>
+              <div class="mb-3">
+                <label for="contact-type" class="form-label"
+                  >Tipo de contacto:</label
+                >
+                <select class="form-select" id="contact-type">
+                  <option value="" selected>
+                    Seleccione un tipo de contacto
+                  </option>
+                  <option value="Academico">Academico</option>
+                  <option value="Laboral">Laboral</option>
+                  <option value="Profesional">Profesional</option>
+                </select>
+              </div>
+              <button
+                type="button"               
+                class="btn btn-outline-primary float-end"
+                id="btn-save"
+              >
+                Guardar
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-warning float-end mr-1"
+                id="btn-clear"
+              >
+                Limpiar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+      <div class="row margin-top-2" id="contact-container">
+
+       <!--  <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <h5 class="card-title">Contacto - Academico</h5>
+            </div>
+
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Nombre: Jose</li>
+                <li class="list-group-item">Telefono: 4234324</li>
+              </ul>
+              <button class="btn btn-danger float-end">Eliminar</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+
+  <script src="assets/js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="/assets/js/toastr/toastr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+  <script src="assets/js/index/indexJquery.js"></script>
+  <!-- <script src="assets/js/index/index.js"></script> -->
+</html>
